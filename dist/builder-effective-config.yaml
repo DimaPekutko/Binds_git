@@ -1,0 +1,10 @@
+directories:
+  output: dist
+  buildResources: build
+appId: com.dkefir03.app
+productName: Binds Hotkeys
+target: NSIS
+nsis:
+  allowToChangeInstallationDirectory: true
+  oneClick: false
+electronVersion: 6.0.11

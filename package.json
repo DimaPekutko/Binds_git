@@ -1,5 +1,5 @@
 {
-  "name": "binds",
+  "name": "Binds",
   "version": "1.0.0",
   "description": "Some project for binds",
   "main": "index.js",
@@ -15,6 +15,7 @@
   "license": "ISC",
   "devDependencies": {
     "electron": "^6.0.11",
+    "electron-builder": "^21.2.0",
     "electron-packager": "^14.0.6"
   },
   "dependencies": {
@@ -39,5 +40,14 @@
       "x64",
       "ia32"
     ]
+  },
+  "build": {
+    "appId": "com.dkefir03.app",
+    "productName": "Binds Hotkeys",
+    "target": "NSIS",
+    "nsis": {
+      "allowToChangeInstallationDirectory": true,
+      "oneClick": false
+    }
   }
 }

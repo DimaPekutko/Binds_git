@@ -21,11 +21,11 @@ function appMain() {
 	win = new BrowserWindow({
 		width: 800,
 		height: 550,
-		//icon: __dirname + '/binds_icon.png',
+		icon: __dirname + '/binds_icon.png',
 		webPreferences: {
 			nodeIntegration: true
 		},
-		show: true
+		show: false
 	});
 
 	win.on('close', (event) => {
@@ -42,7 +42,7 @@ function appMain() {
     	slashes: true
     }));
 
-    win.webContents.openDevTools();
+    //win.webContents.openDevTools();
   
   var user_prefs_file = path.join(__dirname, 'user_prefs/user_status.txt');
 	fs.readFile(user_prefs_file, "utf8", function(err, data) {
