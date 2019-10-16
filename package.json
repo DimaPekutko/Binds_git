@@ -1,0 +1,43 @@
+{
+  "name": "binds",
+  "version": "1.0.0",
+  "description": "Some project for binds",
+  "main": "index.js",
+  "scripts": {
+    "test": "Hello",
+    "start": "electron ."
+  },
+  "keywords": [
+    "Binds",
+    "Hotkeys"
+  ],
+  "author": "DmitryPekutko",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^6.0.11",
+    "electron-packager": "^14.0.6"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "iohook": "^0.6.1",
+    "jquery": "^3.4.1",
+    "nedb": "^1.8.0",
+    "node-abi": "^2.11.0",
+    "poper": "^0.1.1"
+  },
+  "iohook": {
+    "targets": [
+      "node-64",
+      "electron-73"
+    ],
+    "platforms": [
+      "win32",
+      "darwin",
+      "linux"
+    ],
+    "arches": [
+      "x64",
+      "ia32"
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+body {
+	background: #000000;
+	color: #FFFFFF;
+}
+
+#header_logotype {
+	padding-top: 10px;
+}
+
+.bind_div {
+	margin-left: 20px;
+	margin-bottom: 15px;
+}
+
+.bind_id {
+	display: none;
+}
+
+.bind_name {
+	font-size: 20px;
+    margin-right: 20px;
+    color: #000000;
+    font-weight: bold;
+}
+
+#bind_activated_true {
+    background: lime;
+}
+
+#bind_activated_false {
+    background: #FFC107;
+}
+
+.bind_conf, .bind_file {
+   font-size: 17px;
+   padding-right: 20px;
+}
+
+#add_bind_config {
+	text-transform: uppercase;
+}
